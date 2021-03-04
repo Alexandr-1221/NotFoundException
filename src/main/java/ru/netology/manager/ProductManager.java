@@ -42,6 +42,10 @@ public class ProductManager {
         return result;
     }
 
+    public void removeById(int id) {
+        repository.removeById(id);
+    }
+
     public boolean matches(Product product, String search) {
         if (product instanceof Book) {
             Book book = (Book) product;
